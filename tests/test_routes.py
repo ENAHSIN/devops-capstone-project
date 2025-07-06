@@ -11,19 +11,14 @@ from unittest import TestCase
 from tests.factories import AccountFactory
 from service.common import status  # HTTP Status Codes
 from service.models import db, Account, init_db
-from service.routes import app
-
+from service.routes import app # CORRECT: No talisman import here
 
 DATABASE_URI = os.getenv(
     "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
 )
 
 BASE_URL = "/accounts"
-
-# To get the Flask test client to use https with the environ_overrides attribute.
-# When making an URL call, pass environ_overrides=HTTPS_ENVIRON
 HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
-
 
 ######################################################################
 #  T E S T   C A S E S
@@ -39,9 +34,8 @@ class TestAccountService(TestCase):
         app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URI
         app.logger.setLevel(logging.CRITICAL)
         init_db(app)
-        # Talisman will force all requests to your REST API to use the https:// protocol.
-        # This is a good thing, except perhaps when testing (-> all tests will fail).
-        talisman.force_https = False
+        # Use app.talisman to access the talisman object
+        app.talisman.force_https = False # <-- CORRECTED THIS LINE
 
     @classmethod
     def tearDownClass(cls):
@@ -51,7 +45,6 @@ class TestAccountService(TestCase):
         """Runs before each test"""
         db.session.query(Account).delete()  # clean up the last tests
         db.session.commit()
-
         self.client = app.test_client()
 
     def tearDown(self):
